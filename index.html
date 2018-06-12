@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The New Inn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="The New Inn, Shrawley. Charming rustic pub and restaurant located in the sceninc Malvern Hills. Family and dog friendly pub, with a varied menu suited to all needs.">
+    <!-- Fill in when domain purchased <meta property="og:url" content="{{pageUrl}}"> -->
+    <meta property="og:image" content="images/pub1.jpg">
+    <meta property="og:title" content="The New Inn, Shrawley">
+    <meta property="og:description" content="The New Inn, Shrawley. Charming rustic pub and restaurant located in the sceninc Malvern Hills.">
+    <link type="text/css" rel="stylesheet" href="style.CSS"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type = "text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          var
+            images = "#gallery > img" // image selector
+          , interval = 4000           // milliseconds between transitions
+          , index = 0                 // starting index
+          , count = $(images).length  // image count
+            // the transition loop
+          , handle = setInterval(function() {
+              // fade out the current image
+              $(images + ":eq(" + index + ")").fadeOut('slow');
+              // get the next index, or cycle back to 0
+              if (++index === count) index = 0;
+              // fade in the next image
+              $(images + ":eq(" + index + ")").fadeIn('slow');
+            }
+            , interval
+          )
+          , stop = function(){
+              clearInterval(handle);
+          };
+        });
+      </script>
+</head>
+<body>
+    <div class="icon-bar">
+                <a target="_blank" href="https://www.facebook.com/The-New-Inn-Shrawley-237520163665285/" class="facebook"><i class="fa fa-facebook"></i></a> 
+                <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g2549664-d4580386-Reviews-The_New_Inn-Shrawley_Malvern_Hills_Worcestershire_England.html"><img src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/socialWidget/20x28_green-21692-2.png"/></a>
+                <script async src="https://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=486&amp;locationId=4580386&amp;color=green&amp;size=rect&amp;lang=en_UK&amp;display_version=2"></script>
+    </div>
+    <div class="openStatus">
+        <p id="statusText"></p>
+    </div>
+    <div class="wrapper">
+            
+    <div class="topContent">
+        <div class="topnav" id="myTopnav">
+        
+            <div class="pageTitle">
+                <a id="topTitle" href="index.html"><h1 >The New Inn</h1><p class="subHeading">Country Pub & Dining</p></a>
+                <a id="smallTitle" href="index.html">The New Inn</a>
+                
+            </div>
+            <ul class="list">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="menu.pdf" target="_blank">Menu</a>
+                    <a href="#photoAlbum">Gallery</a>
+                    <a href="#map">Find Us</a>
+                    <a href="#footer">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+            </ul>
+        
+    </div>
+
+    <div id="header">
+            <div id="gallery">
+      
+                    <img src="images/pub1.jpg"/>
+                    <img src="images/bar.jpg"/>
+                    <img src="images/dining1.jpg"/>
+                    
+                  </div>
+    </div>
+    </div>
+
+    <div id="about">
+        <h2>About Us</h2>
+        <p>The New Inn in Shrawley, a traditional country cosy pub and restaurant located in the exceptionally scenic Malvern Hills District run by Gerry and Julie.<br><br>We are a dog friendly and family friendly pub, ideally located for walkers to come by after a hike in the local hills.<br>We pride our selves on customer service and our great food, which is locally sourced. Take a look at our <a target="_blank" href="menu.pdf">Menu</a>, we will always do our best to meet any dietary needs.
+        <br><br>The New Inn has kept its rustic charm, step in to meet the team and the locals. Your happiness is our goal, so feel free to check out previous reviews or even let us know what you think! Click <a href="">here to find us on Facebook</a> or click <a href="">here to find us on Tripadvisor</a></p>
+
+    </div>
+
+    <div id="photoAlbum">
+            <div class="row"> 
+                    <div class="column">
+                      <a target="_blank" href="images/backOfBar.jpg"><img src="images/backOfBar.jpg"></a>
+                      <a target="_blank" href="images/bar2.jpg"> <img src="images/bar2.jpg"></a>
+                      <a target="_blank" href="images/deerHead.jpg"> <img src="images/deerHead.jpg"></a>
+                      <a target="_blank" href="images/dining1.jpg"><img src="images/dining1.jpg"></a>
+                      
+                      <a target="_blank" href="images/fireplace4.jpg"><img src="images/fireplace4.jpg"></a>
+                     
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="images/frontRoom.jpg"><img src="images/frontRoom.jpg"></a>
+                        <a target="_blank" href="images/hangingGlasses.jpg"><img src="images/hangingGlasses.jpg"></a>
+                        <a target="_blank" href="images/muddyBoots.jpg"><img src="images/muddyBoots.jpg"></a>
+                        <a target="_blank" href="images/fireplace2.jpg"><img src="images/fireplace2.jpg"></a>
+                        <a target="_blank" href="images/window.jpg"><img src="images/window.jpg"></a>
+                        
+                    </div> 
+                    <div class="column">
+                        <a target="_blank" href="images/frontRoom2.jpg"><img src="images/frontRoom2.jpg"></a>
+                        <a target="_blank" href="images/piano.jpg"><img src="images/piano.jpg"></a>
+                        <a target="_blank" href="images/pictureFrame.jpg"><img src="images/pictureFrame.jpg"></a>
+                        <a target="_blank" href="images/fireplace3.jpg"><img src="images/fireplace3.jpg"></a>
+                        <a target="_blank" href="images/signPost.jpg"><img src="images/signPost.jpg"></a>
+                 
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="images/frontRoom3.jpg"><img src="images/frontRoom3.jpg"></a>
+                        <a target="_blank" href="images/taps.jpg"><img src="images/taps.jpg"></a>
+                        <a target="_blank" href="images/sign1.jpg"><img src="images/sign1.jpg"></a>
+                        <a target="_blank" href="images/dining3.jpg"><img src="images/dining3.jpg"></a>
+                        <a target="_blank" href="images/bell.jpg"><img src="images/bell.jpg"></a>
+                      
+              
+                    </div>
+                  </div>
+
+    </div>
+</div>
+
+   
+    <div id="map" style="width:100%;height:500px">
+        
+    </div>
+    <div id="footer">
+            <a href="#"><img class="footerLogo" src="images/logo.png"/></a>
+            <div class="footerText">
+            <h4>The New Inn</h4>
+            <p>New Inn Lane, Shrawley<br>Worcestershire<br>WR6 6TE<br>Phone Number:<br>Email:</p>
+            <br>
+            <p>Copyright 2018. Author: M.Ross</p>
+            </div>  
+    </div>
+
+
+<!-- JAVASCRIPT -->
+<!---------------------------------------------------->
+<!-- SCRIPT TO IMPLEMENT GOOGLE MAP -->
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var newInn = {lat: 52.294714, lng: -2.295707};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 15, center: newInn});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: newInn, map: map});
+      var infowindow = new google.maps.InfoWindow({
+        content: "New Inn Lane<br>Shrawley<br>Worcestershire<br>WR6 6TE"
+      });
+      infowindow.open(map,marker);
+    }
+        </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5VRUshl9UoCCNsGBafqjMpJ_zELk-uO0&callback=initMap"></script>
+
+<!---------------------------------------------------->
+<!-- SCRIPT TO CHANGE NAVBAR BASED ON SCROLL -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop()>150){
+        $('#topTitle').css("display", "none");
+        $('.list').css("border", "none");
+        $('.list').css("display", "block");
+        $('.list').css("float", "right");
+        $('#smallTitle').css("display", "block");
+        $('.openStatus').css("top", "50%");
+        $('.openStatus').css("transition", "all 1s ease");
+    }else{
+        $('#topTitle').css("display", "block");
+        $('#smallTitle').css("display", "none");
+        $('.list').css("display", "inline-block");
+        $('.list').css("float", "none");
+        $('.list').css("border-top", "1px #fff4b7 solid");
+        $('.topnav').css("text-align", "center");
+        $('.openStatus').css("top", "5%");
+        $('.openStatus').css("transition", "all 1s ease");
+    }
+});
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<!---------------------------------------------------->
+<!-- SCRIPT FOR SLOW SCROLLING DOWN PAGE -->
+<script>
+    // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+<!---------------------------------------------------->
+<!-- SCRIPT TO CHANGE OPEN NOW BASED ON CURRENT TIME-->
+<script>
+window.onload = ( function() {        
+    getDateTime();
+     })(); 
+
+function getDateTime() {
+    var now     = new Date(); 
+    var hour    = now.getHours(); 
+   if(hour >= 12){  
+      document.getElementById('statusText').innerHTML = "We are currently <span class='open'>Open</span>!<br>Opening hours are:<br>";
+   }
+   else {
+         document.getElementById('display').innerHTML = "We are currently <span class='closed'>Closed</span>!<br><br>Opening hours are:<br>";
+    }
+}
+
+</script>
+</body>
+</html>
