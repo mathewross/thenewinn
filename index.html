@@ -139,7 +139,7 @@
             <a href="#"><img class="footerLogo" src="images/logo.PNG"/></a>
             <div class="footerText">
             <h4>The New Inn</h4>
-            <p>New Inn Lane, Shrawley<br>Worcestershire<br>WR6 6TE<br>Phone Number:<br>Email:</p>
+            <p>New Inn Lane, Shrawley<br>Worcestershire<br>WR6 6TE<br>Phone Number: 01299 822701<br>Email:</p>
             <br>
             <p>Copyright 2018. Author: M.Ross</p>
             </div>  
@@ -186,7 +186,7 @@ $(window).scroll(function() {
         $('.list').css("float", "none");
         $('.list').css("border-top", "1px #fff4b7 solid");
         $('.topnav').css("text-align", "center");
-        $('.openStatus').css("top", "5%");
+        $('.openStatus').css("top", "97px");
         $('.openStatus').css("transition", "all 1s ease");
     }
 });
@@ -252,12 +252,20 @@ window.onload = ( function() {
 
 function getDateTime() {
     var now     = new Date(); 
-    var hour    = now.getHours(); 
-   if(hour >= 12){  
-      document.getElementById('statusText').innerHTML = "We are currently <span class='open'>Open</span>!<br>Opening hours are:<br>";
+    var hour    = now.getUTCHours(); 
+   if(now.getDay() == 0 || now.getDay() == 2 || now.getDay() == 3 || now.getDay() == 4 || now.getDay() == 5 || now.getDay() == 6){
+       if(hour <= 12 && hour >= 1){  
+      document.getElementById('statusText').innerHTML = "We are currently <span class='closed'>Closed</span>!<br><span class='smallText'>Opening hours are:<br>Mon: 12:00 - 00:30<br>Tue: 16:00 - 00:30<br>Wed: 12:00 - 00:30<br>Thu: 12:00 - 00:30<br>Fri: 12:00 - 01:30<br>Sat: 12:00 - 01:30<br>Sun: 12:00 - 00:30</span>";
+       }else{
+        document.getElementById('statusText').innerHTML = "We are currently <span class='open'>Open</span>!<br><span class='smallText'>Opening hours are:<br>Mon: 12:00 - 00:30<br>Tue: 16:00 - 00:30<br>Wed: 12:00 - 00:30<br>Thu: 12:00 - 00:30<br>Fri: 12:00 - 01:30<br>Sat: 12:00 - 01:30<br>Sun: 12:00 - 00:30</span>";
+       }
    }
    else {
-         document.getElementById('display').innerHTML = "We are currently <span class='closed'>Closed</span>!<br><br>Opening hours are:<br>";
+       if(hour <= 16 && hour >= 1){
+         document.getElementById('display').innerHTML = "We are currently <span class='closed'>Closed</span>!<br><br>Opening hours are:<br>Mon: 12:00 - 00:30<br>Tue: 16:00 - 00:30<br>Wed: 12:00 - 00:30<br>Thu: 12:00 - 00:30<br>Fri: 12:00 - 01:30<br>Sat: 12:00 - 01:30<br>Sun: 12:00 - 00:30";
+       }else{
+        document.getElementById('statusText').innerHTML = "We are currently <span class='open'>Open</span>!<br><span class='smallText'>Opening hours are:<br>Mon: 12:00 - 00:30<br>Tue: 16:00 - 00:30<br>Wed: 12:00 - 00:30<br>Thu: 12:00 - 00:30<br>Fri: 12:00 - 01:30<br>Sat: 12:00 - 01:30<br>Sun: 12:00 - 00:30</span>";
+       }
     }
 }
 
