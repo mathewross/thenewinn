@@ -118,9 +118,13 @@ ul{
     z-index: 40;
     background-color: rgb(79, 79, 79);
     color: white;
-    top: 5%;
-    
+    top: 97px;
+    padding-top: 0px;
     padding: 10px;
+    padding-bottom: 0px;
+  }
+  .smallText{
+    font-size: 12px;
   }
   .open{
     font-variant: small-caps;
