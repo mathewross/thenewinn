@@ -131,6 +131,11 @@ ul{
     font-weight: bold;
     color: #4cff00;
   }
+  .closed{
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #ff002a;
+  }
   .icon-bar {
     position: fixed;
     top: 50%;
