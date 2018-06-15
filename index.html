@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/smallLogo.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type = "text/javascript" src="script.js"></script>
     <script type="text/javascript">
@@ -40,13 +41,27 @@
       </script>
 </head>
 <body>
+    <!-- overlay navigation for mobile -->
+    <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                        <a id="homeButton" onclick="closeNav()" href="#">Home</a>
+                        <a href="#about"onclick="closeNav()" >About</a>
+                        <a href="menu.pdf" target="_blank">Menu</a>
+                        <a href="#photoAlbum" onclick="closeNav()" >Gallery</a>
+                        <a href="#offers" onclick="closeNav()" >Offers & Events</a>
+                        <a href="#map" onclick="closeNav()" >Find Us</a>
+                        <a href="#footer" onclick="closeNav()" >Contact</a>
+                </div>
+    </div>
+
     <div class="icon-bar">
                 <a target="_blank" href="https://www.facebook.com/The-New-Inn-Shrawley-237520163665285/" class="facebook"><i class="fa fa-facebook"></i></a> 
                 <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g2549664-d4580386-Reviews-The_New_Inn-Shrawley_Malvern_Hills_Worcestershire_England.html"><img src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/socialWidget/20x28_green-21692-2.png"/></a>
                 <script async src="https://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=486&amp;locationId=4580386&amp;color=green&amp;size=rect&amp;lang=en_UK&amp;display_version=2"></script>
     </div>
     <div class="openStatus">
-        <p id="statusText"></p>
+        <p id="statusText">Opening Hours:<br>Mon: 12:00 - 00:30<br>Tue: 16:00 - 00:30<br>Wed: 12:00 - 00:30<br>Thu: 12:00 - 00:30<br>Fri: 12:00 - 01:30<br>Sat: 12:00 - 01:30<br>Sun: 12:00 - 00:30</p>
     </div>
     <div class="wrapper">
             
@@ -59,18 +74,18 @@
                 
             </div>
             <ul class="list">
-                    <a href="#">Home</a>
+                    <a id="homeButton" href="#">Home</a>
                     <a href="#about">About</a>
                     <a href="menu.pdf" target="_blank">Menu</a>
                     <a href="#photoAlbum">Gallery</a>
+                    <a href="#offers">Offers & Events</a>
                     <a href="#map">Find Us</a>
                     <a href="#footer">Contact</a>
-                    <a href="#" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <span id="menuButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
                     </a>
             </ul>
         
-    </div>
+        </div>
 
     <div id="header">
             <div id="gallery">
@@ -79,7 +94,7 @@
                     <img src="images/bar.jpg"/>
                     <img src="images/dining1.jpg"/>
                     
-                  </div>
+            </div>
     </div>
     </div>
 
@@ -135,16 +150,22 @@
         <div class="corner-ribbon top-left sticky red shadow">Events & Offers</div>
         <img src="images/entertainment.png">
         <img src="images/steakNight.png">
+        <img src="images/fishAndCurryNight.png">
     </div>
    
     <div id="map" style="width:100%;height:500px">
         
     </div>
     <div id="footer">
-            <a href="#"><img class="footerLogo" src="images/logo.PNG"/></a>
+            <div id="logoAndSocial">
+            <a href="#"><img class="footerLogo" src="images/logo.PNG"/></a><br><br><br>
+            <a target="_blank" href="https://www.facebook.com/The-New-Inn-Shrawley-237520163665285/" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g2549664-d4580386-Reviews-The_New_Inn-Shrawley_Malvern_Hills_Worcestershire_England.html"><img src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/socialWidget/20x28_green-21692-2.png"/></a>
+            <script async src="https://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=486&amp;locationId=4580386&amp;color=green&amp;size=rect&amp;lang=en_UK&amp;display_version=2"></script>
+            </div>
             <div class="footerText">
             <h4>The New Inn</h4>
-            <p>New Inn Lane, Shrawley<br>Worcestershire<br>WR6 6TE<br>Phone Number: 01299 822701<br>Email:</p>
+            <p>New Inn Lane, Shrawley<br>Worcestershire<br>WR6 6TE<br>Phone Number: 01299 822701<br>Email: newinn13@hotmail.co.uk</p>
             <br>
             <p>Copyright 2018. Author: M.Ross</p>
             </div>  
@@ -182,8 +203,10 @@ $(window).scroll(function() {
         $('.list').css("display", "block");
         $('.list').css("float", "right");
         $('#smallTitle').css("display", "block");
-        $('.openStatus').css("top", "50%");
+        $('.openStatus').css("top", "140px");
         $('.openStatus').css("transition", "all 1s ease");
+        $('#menuButton').css("margin-right", "10px");
+        $('#menuButton').css("margin-bottom", "10px");
     }else{
         $('#topTitle').css("display", "block");
         $('#smallTitle').css("display", "none");
@@ -193,6 +216,8 @@ $(window).scroll(function() {
         $('.topnav').css("text-align", "center");
         $('.openStatus').css("top", "97px");
         $('.openStatus').css("transition", "all 1s ease");
+        $('#menuButton').css("margin-right", "0px");
+        $('#menuButton').css("margin-bottom", "0px");
     }
 });
 </script>
@@ -254,7 +279,7 @@ $('a[href*="#"]')
 window.onload = ( function() {        
     getDateTime();
      })(); 
-
+/*
 function getDateTime() {
     var now     = new Date(); 
     var hour    = now.getUTCHours(); 
@@ -273,7 +298,17 @@ function getDateTime() {
        }
     }
 }
-
+*/
 </script>
+<!-- SCRIPT TO OPEN MOBILE NAVIGATION BAR -->
+<script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 </body>
 </html>
