@@ -154,7 +154,7 @@ ul{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 40;
+    z-index: 351;
     background-color: rgb(45, 45, 45);
     color: white;
     top: 97px;
@@ -205,7 +205,7 @@ ul{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 30;
+    z-index: 351;
   }
   /* Style the icon bar links */
   .icon-bar a {
