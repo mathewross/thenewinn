@@ -251,8 +251,8 @@ ul{
   }
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 23.5%;
-    max-width: 23.5%;
+    flex: 24%;
+    max-width: 24%;
     padding: 0 4px;
     object-fit: scale-down;
   }
