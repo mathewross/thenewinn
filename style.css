@@ -251,6 +251,8 @@ ul{
   }
   /* Create four equal columns that sits next to each other */
   .column {
+    text-align: center;
+    margin: auto;
     flex: 24%;
     max-width: 24%;
     padding: 0 4px;
