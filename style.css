@@ -43,7 +43,7 @@ ul{
   margin: 0;
 }
 #gallery { position: relative; margin-top: 0;}
-#gallery > img { position: absolute; left: 0; top: 0; display: none; max-width: 100%; z-index: 1; margin-top: -20px;}
+#gallery > img { position: absolute; left: 0; top: 0; display: none; max-width: 100%; width: 100%; z-index: 1; margin-top: -20px;}
 #gallery > img:first-child { display: block; }
 #smallTitle{
   display: none;
