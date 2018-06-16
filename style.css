@@ -243,7 +243,7 @@ ul{
     max-width: 100%;
     margin: 0;
     padding: 0;
-    
+    text-align: center;
   }
   #photoAlbum:active{
     border:none;
@@ -416,4 +416,7 @@ ul{
     max-width: 30%;
     flex: 30%;
   }
+  .row{
+    text-align: center;
+    }
  }
