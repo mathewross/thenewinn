@@ -30,7 +30,9 @@ html, body{
 
 }
 
-
+#aboutHours{
+  display: none;
+}
 
 h1{
  font-weight: 300;
@@ -348,6 +350,9 @@ ul{
     }
     .topnav a.icon {
       float: right;
+      display: block;
+    }
+    #aboutHours{
       display: block;
     }
     .icon-bar {
