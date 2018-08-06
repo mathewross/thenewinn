@@ -394,6 +394,7 @@ ul{
 	
       width: 90%;
       margin: auto;
+	    margin-top: 50px;
     }
     #menuButton{
       display: block;
