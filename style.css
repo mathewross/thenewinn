@@ -384,7 +384,7 @@ ul{
       display: none;
     }
     #offers{
-      
+      margin-top: 50px;
       max-width: 100%;
       text-align: center;
     }
