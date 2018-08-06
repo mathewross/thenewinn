@@ -388,6 +388,7 @@ ul{
       display: none;
     }
     #offers{
+	padding-top: 10px;
       max-width: 100%;
       text-align: center;
     }
@@ -403,6 +404,9 @@ ul{
     #topOffer{
 	    margin-top: 100px;
     }
+	.corner-ribbon{
+		display: none;
+	}
     #menuButton{
       display: block;
       font-size: 14px;
