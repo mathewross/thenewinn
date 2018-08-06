@@ -147,6 +147,9 @@ ul{
     margin: 20px;
     width: 20%;
   }
+.topOffer{
+	    margin-top: auto;
+    
   .topnav .icon {
     display: none;
   }
@@ -394,7 +397,10 @@ ul{
 	
       width: 90%;
       margin: auto;
-	    margin-top: 50px;
+	    
+    }
+    .topOffer{
+	    margin-top: 100px;
     }
     #menuButton{
       display: block;
